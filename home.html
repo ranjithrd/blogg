@@ -1,0 +1,61 @@
+---
+layout: default
+permalink: /home/
+title: Home
+---
+
+
+{% assign art = site.static_files | where: "image", true %}
+{% assign posts = site.posts %}
+{% assign first = site.posts.first %}
+
+<h3 class="subtitle sans tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: lighter;">BLOG</h3>
+<div class="tile is-ancestor">
+  
+    <div class="tile is-parent"><a href="{{ first.url }}" style="color: inherit;text-decoration: none;"></a>
+      <article class="tile is-child container shadow bg-lightest rende pad">
+        <h1 class="title is-spaced">
+          {{ first.title }}
+        </h1>
+        <h4>
+          {{ first.dated }}
+        </h4>
+        <p class="subtitle">
+          The last days of the Chinese extradition bill have arrived, with it being ended
+            on the 27th of this month. The protests have now taken a new turn: democracy. The complete removal of any and all involvement
+            of the Chinese government in the New York of Asia.
+        </p>
+      </article></a>
+    </div>
+  
+    <div class="tile is-parent is-vertical">
+      <article class="tile is-child container shadow rende pad shadow">
+        <h2 class="title is-spaced">A New Day</h2>
+        <p class="subtitle">The last days of the Chinese extradition bill have arrived, with it being ended
+            on the 27th of this month. The protests have now taken a new turn: democracy. The complete removal of any and all involvement
+            of the Chinese government in the New York of Asia.</p>
+      </article>
+      <article class="tile is-child rende container pad shadow">
+        <h2 class="title is-spaced">Deepavali</h2>
+        <p class="subtitle">The last days of the Chinese extradition bill have arrived, with it being ended
+            on the 27th of this month. The protests have now taken a new turn: democracy. The complete removal of any and all involvement
+            of the Chinese government in the New York of Asia.</p>
+      </article>
+    </div>
+</div>
+
+<h3 class="subtitle sans tx-blacker" style="padding-left: 1rem;color:rgb(53, 53, 53);font-weight: lighter;">ART</h3>
+<div class="tile is-ancestor row">
+    <div class="tile is-parent column">
+        <article class="tile is-child container rende shadow text-center">
+          <h1 class="title is-spaced" style="padding-top: 1.5rem;">Lord Rama</h1>
+              <img src="{{ art[13].path }}" alt="lord rama" class="rended">
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child pad rende container bg-lightest shadow text-center" style="padding: top 0.5rem;" id="showModal2">
+          <h1 class="title is-spaced">ABD</h1>
+              <img src="{{ art[0].path }}" alt="ab de villiers" class="rended">
+        </article>
+      </div>
+  </div>
